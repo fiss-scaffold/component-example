@@ -1,0 +1,37 @@
+{
+  "name": "component-example",
+  "version": "1.0.0",
+  "description": "A component example",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start",
+    "dist": "browserify index.js -o dist/bundle.js && browserify example/main.js -o example/bundle.js",
+    "docs": "jsdoc index.js src/ README.md -d docs",
+    "major": "fiss version major && git push --follow-tags",
+    "minor": "fiss version minor && git push --follow-tags",
+    "patch": "fiss version patch && git push --follow-tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fiss-scaffold/component-example.git"
+  },
+  "keywords": [
+    "component"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fiss-scaffold/component/issues"
+  },
+  "homepage": "https://github.com/fiss-scaffold/component#readme",
+  "devDependencies": {
+    "browserify": "^13.0.1",
+    "jasmine-core": "^2.4.1",
+    "jsdoc": "^3.4.0",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-commonjs": "^1.0.0",
+    "karma-coverage": "^1.0.0",
+    "karma-jasmine": "^1.0.2"
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "name": "component-example",
+    "description": "A component example",
+    "dependencies": [],
+    "exclude": [
+        "docs",
+        "src",
+        "test",
+        "README.md"
+    ],
+    "version": "0.0.0"
+}
